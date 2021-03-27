@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Triangle SVG</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			:root {
+				--dark-color: #c76e3c;
+				--light-color: #c9987c;
+			}
+			svg #darkGroup {
+				fill: var(--dark-color);
+			}
+			svg #lightGroup {
+				fill: var(--light-color);
+			}
+			#dark1,
+			#dark2,
+			#light1 {
+				transition: all 1s ease;
+			}
+			#dark2 {
+				transform: translateX(-100%);
+			}
+			svg:hover #dark1 {
+				transform: translateX(40%);
+				opacity: 0;
+			}
+			svg:hover #dark2 {
+				transform: translateX(0%);
+			}
+			svg:hover #light1 {
+				transform: translateX(20%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<svg
+				width="120"
+				height="100"
+				viewBox="0 0 120 100"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g id="triangles">
+					<g id="darkGroup">
+						<path
+							id="dark2"
+							d="M75.3922 49.1184C76.132 49.4814 76.1399 50.5331 75.4057 50.9072L28.82 74.6424C28.1576 74.9798 27.3717 74.5023 27.3661 73.7589L27.0122 26.9963C27.0066 26.2529 27.7852 25.7635 28.4526 26.091L75.3922 49.1184Z"
+							fill-opacity="0.74"
+						/>
+						<path
+							id="dark1"
+							d="M91.3922 49.1184C92.132 49.4814 92.1399 50.5331 91.4057 50.9072L44.82 74.6424C44.1576 74.9798 43.3717 74.5023 43.3661 73.7589L43.0122 26.9963C43.0066 26.2529 43.7852 25.7635 44.4526 26.091L91.3922 49.1184Z"
+							fill-opacity="0.74"
+						/>
+					</g>
+					<g id="lightGroup">
+						<path
+							id="light1"
+							d="M74.9915 48.955C75.7307 49.3189 75.7399 50.3693 75.0071 50.743L28.8747 74.2649C28.2127 74.6025 27.4254 74.1242 27.419 73.3804L27.0141 26.9451C27.0076 26.2013 27.7864 25.7127 28.4543 26.0416L74.9915 48.955Z"
+							fill-opacity="0.74"
+						/>
+					</g>
+				</g>
+			</svg>
+		</div>
+		<script>
+			const svg = document.getElementById("triangles");
+			svg.onclick = (event) => {
+				const colors = [
+					"red",
+					"blue",
+					"green",
+					"yellow",
+					"orange",
+					"pink",
+					"purple",
+				];
+				const randomColor = () =>
+					colors[Math.floor(Math.random() * colors.length)];
+				document.documentElement.style.cssText = `
+                    --dark-color: ${randomColor()};
+                    --light-color: ${randomColor()};
+                `;
+			};
+		</script>
+	</body>
+</html>

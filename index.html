@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Fun with SVGs</title>
+		<style>
+			::marker {
+				content: "»";
+				font-size: 3em;
+				--hue: 0;
+				color: hsl(var(--hue) 50% 50%);
+			}
+			.body {
+				font-family: "Ubuntu Mono";
+			}
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				flex-direction: column;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>
+				Made using Figma, animated using CSS, learnt from
+				<a href="https://www.youtube.com/watch?v=UTHgr6NLeEw"
+					>Fireship</a
+				>
+			</h1>
+			<ul>
+				<li>
+					<h2><a href="/triangle.html">Triangle SVG</a></h2>
+				</li>
+				<li>
+					<h2><a href="/phone.html">Phone SVG</a></h2>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

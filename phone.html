@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Phone SVG</title>
+		<style>
+			.container {
+				display: flex;
+				justify-content: center;
+			}
+
+			#skeleton {
+				animation: fadeInUp 1s;
+			}
+
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(20%);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0%);
+				}
+			}
+
+			#bolts g {
+				opacity: 0;
+				animation: dropIn 7s ease forwards;
+				animation-delay: calc(var(--order) * 100ms);
+			}
+
+			@keyframes dropIn {
+				20% {
+					opacity: 0;
+					transform: translateY(-20%);
+				}
+				30%,
+				100% {
+					opacity: 1;
+					transform: translateY(0%);
+				}
+				/* 100% {
+					transition: all 2s ease-in-out;
+					opacity: 0;
+					transform: translateY(20%);
+				} */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<svg
+				width="368"
+				height="648"
+				viewBox="0 0 368 648"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g id="phone" filter="url(#filter0_d)">
+					<rect
+						x="4"
+						width="360"
+						height="640"
+						rx="50"
+						fill="#F3EEEE"
+					/>
+					<g id="skeleton">
+						<g id="hamburgerMenu">
+							<line
+								id="Line 1"
+								x1="277"
+								y1="48.5"
+								x2="301"
+								y2="48.5"
+								stroke="black"
+							/>
+							<line
+								id="Line 2"
+								x1="277"
+								y1="57.5"
+								x2="301"
+								y2="57.5"
+								stroke="black"
+							/>
+							<line
+								id="Line 3"
+								x1="277"
+								y1="67.5"
+								x2="301"
+								y2="67.5"
+								stroke="black"
+							/>
+						</g>
+						<circle
+							id="Ellipse 1"
+							cx="62"
+							cy="58"
+							r="18"
+							fill="#C4C4C4"
+						/>
+						<rect
+							id="Rectangle 1"
+							x="33"
+							y="114"
+							width="147"
+							height="36"
+							rx="10"
+							fill="#C4C4C4"
+						/>
+						<rect
+							id="Rectangle 2"
+							x="190"
+							y="114"
+							width="146"
+							height="36"
+							rx="10"
+							fill="#C4C4C4"
+						/>
+						<rect
+							id="Rectangle 3"
+							x="33"
+							y="164"
+							width="205"
+							height="36"
+							rx="10"
+							fill="#C4C4C4"
+						/>
+						<rect
+							id="Rectangle 4"
+							x="244"
+							y="164"
+							width="48"
+							height="36"
+							rx="10"
+							fill="#C4C4C4"
+						/>
+						<rect
+							id="Rectangle 5"
+							x="298"
+							y="164"
+							width="38"
+							height="36"
+							rx="10"
+							fill="#C4C4C4"
+						/>
+						<rect
+							id="Rectangle 6"
+							x="110"
+							y="262"
+							width="148"
+							height="58"
+							rx="29"
+							fill="#C4C4C4"
+						/>
+						<g id="img1">
+							<rect
+								id="Rectangle 7"
+								x="48"
+								y="352"
+								width="118"
+								height="102"
+								rx="10"
+								fill="#C4C4C4"
+							/>
+							<path
+								id="Vector 2"
+								d="M78.7929 373.707L48.7929 403.707C48.6054 403.895 48.5 404.14 48.5 404.406V447C48.5 449.721 52.5922 452.348 54.8115 453.411C54.9358 453.471 55.0652 453.501 55.203 453.504C87.9414 454.171 154.21 455.097 159 453.5C163.691 451.936 165.58 448.654 165.975 447.106C165.993 447.035 166 446.963 166 446.89V384.829C166 383.951 164.948 383.499 164.311 384.104L146.707 400.829C146.313 401.202 145.694 401.194 145.311 400.811L127.707 383.207C127.317 382.817 126.683 382.817 126.293 383.207L108.707 400.793C108.317 401.183 107.683 401.183 107.293 400.793L80.2071 373.707C79.8166 373.317 79.1834 373.317 78.7929 373.707Z"
+								fill="#787878"
+							/>
+						</g>
+						<g id="img2">
+							<rect
+								id="Rectangle 7_2"
+								x="203"
+								y="496.383"
+								width="118"
+								height="102"
+								rx="10"
+								fill="#C4C4C4"
+							/>
+							<path
+								id="Vector 2_2"
+								d="M233.793 518.091L203.793 548.091C203.605 548.278 203.5 548.524 203.5 548.789V591.383C203.5 594.104 207.592 596.731 209.812 597.795C209.936 597.854 210.065 597.885 210.203 597.888C242.941 598.554 309.21 599.48 314 597.883C318.691 596.32 320.58 593.038 320.975 591.489C320.993 591.418 321 591.347 321 591.274V529.213C321 528.334 319.948 527.883 319.311 528.488L301.707 545.212C301.313 545.586 300.694 545.578 300.311 545.194L282.707 527.591C282.317 527.2 281.683 527.2 281.293 527.591L263.707 545.176C263.317 545.567 262.683 545.567 262.293 545.176L235.207 518.091C234.817 517.7 234.183 517.7 233.793 518.091Z"
+								fill="#787878"
+							/>
+						</g>
+						<g id="img3">
+							<rect
+								id="Rectangle 7_3"
+								x="48"
+								y="496.383"
+								width="118"
+								height="102"
+								rx="10"
+								fill="#C4C4C4"
+							/>
+							<path
+								id="Vector 2_3"
+								d="M78.7929 518.091L48.7929 548.091C48.6054 548.278 48.5 548.524 48.5 548.789V591.383C48.5 594.104 52.5922 596.731 54.8115 597.795C54.9358 597.854 55.0652 597.885 55.203 597.888C87.9414 598.554 154.21 599.48 159 597.883C163.691 596.32 165.58 593.038 165.975 591.489C165.993 591.418 166 591.347 166 591.274V529.213C166 528.334 164.948 527.883 164.311 528.488L146.707 545.212C146.313 545.586 145.694 545.578 145.311 545.194L127.707 527.591C127.317 527.2 126.683 527.2 126.293 527.591L108.707 545.176C108.317 545.567 107.683 545.567 107.293 545.176L80.2071 518.091C79.8166 517.7 79.1834 517.7 78.7929 518.091Z"
+								fill="#787878"
+							/>
+						</g>
+						<g id="img4">
+							<rect
+								id="Rectangle 7_4"
+								x="202"
+								y="352"
+								width="118"
+								height="102"
+								rx="10"
+								fill="#C4C4C4"
+							/>
+							<path
+								id="Vector 2_4"
+								d="M232.793 373.707L202.793 403.707C202.605 403.895 202.5 404.14 202.5 404.406V447C202.5 449.721 206.592 452.348 208.812 453.411C208.936 453.471 209.065 453.501 209.203 453.504C241.941 454.171 308.21 455.097 313 453.5C317.691 451.936 319.58 448.654 319.975 447.106C319.993 447.035 320 446.963 320 446.89V384.829C320 383.951 318.948 383.499 318.311 384.104L300.707 400.829C300.313 401.202 299.694 401.194 299.311 400.811L281.707 383.207C281.317 382.817 280.683 382.817 280.293 383.207L262.707 400.793C262.317 401.183 261.683 401.183 261.293 400.793L234.207 373.707C233.817 373.317 233.183 373.317 232.793 373.707Z"
+								fill="#787878"
+							/>
+						</g>
+					</g>
+					<g id="bolts">
+						<g
+							id="bolt4"
+							style="--order: 5"
+							filter="url(#filter1_d)"
+						>
+							<rect
+								x="282"
+								y="476"
+								width="58"
+								height="58"
+								rx="29"
+								fill="#38C16F"
+							/>
+							<path
+								id="Vector 1"
+								d="M324.631 483H308.75L296 508.875H308.75L299.75 528L327 498.188H313L324.631 483Z"
+								fill="white"
+							/>
+						</g>
+						<g
+							id="bolt3"
+							style="--order: 4"
+							filter="url(#filter2_d)"
+						>
+							<rect
+								x="132"
+								y="477"
+								width="58"
+								height="58"
+								rx="29"
+								fill="#38C16F"
+							/>
+							<path
+								id="Vector 1_2"
+								d="M174.631 483H158.75L146 508.875H158.75L149.75 528L177 498.188H163L174.631 483Z"
+								fill="white"
+							/>
+						</g>
+						<g
+							id="bolt2"
+							style="--order: 3"
+							filter="url(#filter3_d)"
+						>
+							<rect
+								x="282"
+								y="339"
+								width="58"
+								height="58"
+								rx="29"
+								fill="#38C16F"
+							/>
+							<path
+								id="Vector 1_3"
+								d="M324.631 346H308.75L296 371.875H308.75L299.75 391L327 361.188H313L324.631 346Z"
+								fill="white"
+							/>
+						</g>
+						<g
+							id="bolt1"
+							style="--order: 2"
+							filter="url(#filter4_d)"
+						>
+							<rect
+								x="135"
+								y="339"
+								width="58"
+								height="58"
+								rx="29"
+								fill="#38C16F"
+							/>
+							<path
+								id="Vector 1_4"
+								d="M177.631 346H161.75L149 371.875H161.75L152.75 391L180 361.188H166L177.631 346Z"
+								fill="white"
+							/>
+						</g>
+						<g
+							id="boltMain"
+							style="--order: 1"
+							filter="url(#filter5_d)"
+						>
+							<rect
+								x="111"
+								y="233"
+								width="148"
+								height="58"
+								rx="29"
+								fill="#38C16F"
+							/>
+							<path
+								id="Vector 1_5"
+								d="M198.631 240H182.75L170 265.875H182.75L173.75 285L201 255.188H187L198.631 240Z"
+								fill="white"
+							/>
+						</g>
+					</g>
+				</g>
+				<defs>
+					<filter
+						id="filter0_d"
+						x="0"
+						y="0"
+						width="368"
+						height="648"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB"
+					>
+						<feFlood
+							flood-opacity="0"
+							result="BackgroundImageFix"
+						/>
+						<feColorMatrix
+							in="SourceAlpha"
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						/>
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feColorMatrix
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+						/>
+						<feBlend
+							mode="normal"
+							in2="BackgroundImageFix"
+							result="effect1_dropShadow"
+						/>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_dropShadow"
+							result="shape"
+						/>
+					</filter>
+					<filter
+						id="filter1_d"
+						x="278"
+						y="476"
+						width="66"
+						height="66"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB"
+					>
+						<feFlood
+							flood-opacity="0"
+							result="BackgroundImageFix"
+						/>
+						<feColorMatrix
+							in="SourceAlpha"
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						/>
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feColorMatrix
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+						/>
+						<feBlend
+							mode="normal"
+							in2="BackgroundImageFix"
+							result="effect1_dropShadow"
+						/>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_dropShadow"
+							result="shape"
+						/>
+					</filter>
+					<filter
+						id="filter2_d"
+						x="128"
+						y="477"
+						width="66"
+						height="66"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB"
+					>
+						<feFlood
+							flood-opacity="0"
+							result="BackgroundImageFix"
+						/>
+						<feColorMatrix
+							in="SourceAlpha"
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						/>
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feColorMatrix
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+						/>
+						<feBlend
+							mode="normal"
+							in2="BackgroundImageFix"
+							result="effect1_dropShadow"
+						/>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_dropShadow"
+							result="shape"
+						/>
+					</filter>
+					<filter
+						id="filter3_d"
+						x="278"
+						y="339"
+						width="66"
+						height="66"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB"
+					>
+						<feFlood
+							flood-opacity="0"
+							result="BackgroundImageFix"
+						/>
+						<feColorMatrix
+							in="SourceAlpha"
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						/>
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feColorMatrix
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+						/>
+						<feBlend
+							mode="normal"
+							in2="BackgroundImageFix"
+							result="effect1_dropShadow"
+						/>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_dropShadow"
+							result="shape"
+						/>
+					</filter>
+					<filter
+						id="filter4_d"
+						x="131"
+						y="339"
+						width="66"
+						height="66"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB"
+					>
+						<feFlood
+							flood-opacity="0"
+							result="BackgroundImageFix"
+						/>
+						<feColorMatrix
+							in="SourceAlpha"
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						/>
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feColorMatrix
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+						/>
+						<feBlend
+							mode="normal"
+							in2="BackgroundImageFix"
+							result="effect1_dropShadow"
+						/>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_dropShadow"
+							result="shape"
+						/>
+					</filter>
+					<filter
+						id="filter5_d"
+						x="107"
+						y="233"
+						width="156"
+						height="66"
+						filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB"
+					>
+						<feFlood
+							flood-opacity="0"
+							result="BackgroundImageFix"
+						/>
+						<feColorMatrix
+							in="SourceAlpha"
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+						/>
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="2" />
+						<feColorMatrix
+							type="matrix"
+							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+						/>
+						<feBlend
+							mode="normal"
+							in2="BackgroundImageFix"
+							result="effect1_dropShadow"
+						/>
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect1_dropShadow"
+							result="shape"
+						/>
+					</filter>
+				</defs>
+			</svg>
+		</div>
+	</body>
+</html>
